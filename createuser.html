@@ -1,0 +1,73 @@
+<!-- =========================
+FILE: createuser.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(to right,#1c1c1c,#333);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.box{
+    background:white;
+    padding:40px;
+    width:380px;
+    border-radius:10px;
+}
+h2{
+    text-align:center;
+}
+input{
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+}
+button{
+    width:100%;
+    padding:12px;
+    background:#f7a31b;
+    color:white;
+    border:none;
+    margin-top:15px;
+    cursor:pointer;
+}
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Create Account</h2>
+
+<input type="text" placeholder="Username">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<input type="password" placeholder="Confirm Password">
+
+<button onclick="createAccount()">Create Account</button>
+
+<br><br>
+<center><a href="login.html">Already have account?</a></center>
+
+</div>
+
+<script>
+function createAccount(){
+    alert("Account Created Successfully!");
+}
+</script>
+
+</body>
+</html>

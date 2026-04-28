@@ -1,0 +1,76 @@
+<!-- =========================
+FILE: login.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(to right,#111,#333);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.box{
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:10px;
+}
+h2{
+    text-align:center;
+}
+input{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+}
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    background:#f7a31b;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+
+<h2>Login</h2>
+
+<input type="text" id="user" placeholder="Username">
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+function login(){
+
+let username=document.getElementById("user").value;
+let password=document.getElementById("pass").value;
+
+if(username=="User" && password=="User@123"){
+    window.location.href="afterlogin.html";
+}
+else{
+    alert("Invalid Username or Password");
+}
+
+}
+</script>
+
+</body>
+</html>
